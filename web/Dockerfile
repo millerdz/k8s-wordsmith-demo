@@ -1,5 +1,5 @@
 # BUILD
-FROM golang:1.9.1-alpine3.6 as builder
+FROM golang:1.11.5-alpine3.8 as builder
 
 COPY dispatcher.go .
 RUN go build dispatcher.go
